@@ -9,9 +9,10 @@ namespace stackdemo.Pages
 {
     public class IndexModel : PageModel
     {
+        public string HostName;
         public void OnGet()
         {
-
+            HostName = System.Net.Dns.GetHostName();
         }
     }
 }
