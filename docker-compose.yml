@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    image: ericcollazo/stackdemo
+    image: ericcollazo/stackdemo:latest
     build: .
     ports:
       - "8080:80"
