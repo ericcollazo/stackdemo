@@ -12,7 +12,8 @@ namespace stackdemo.Pages
 
         public void OnGet()
         {
-            Message = "Your application description page.";
+            string hostname = System.Net.Dns.GetHostName();
+            Message = "This site is being served from: " + hostname;
         }
     }
 }
